@@ -6,41 +6,56 @@ namespace Treinamento.Versatile.UIAutomatedTesting
 {
     public class Teste
     {
-         // Variável do tipo CHAR
-        char InicialNomeDoMeio = 'A';
-        object CharObject = 'A';
+        public string Nome = "Maria";
+        public int Idade = 32;
+        public bool eHomem = true;
 
-        // Variável do tipo STRING (Coleção de caracteres)
-        string Nome = "Boladão";
-        object StringObj = "String Obj";
 
-        // Variável do tipo INT
-        int Idade = 32;
-        object IntObj = 1;
+        public string RetornaStringNome(string nome)
+        {
+            if (string.IsNullOrEmpty(nome))
+            {
+                return "O nome não foi informado";
+            }
+            else if (!string.IsNullOrEmpty(nome) && nome.Equals("Boladão"))
+            {
+                return "Boladão é o seu nome";
+            }
+            else if (!string.IsNullOrEmpty(nome) && nome.Equals("Jão") || nome.Equals("João"))
+            {
+                return "João é o seu nome";
+            }
+            else
+            {
+                return "Nome informado é diferente de Boladão e João";
+            }
 
-        // variável do tipo Boolean
-        bool EHomem = true;
-        object boolObj = false;
+        } // FIM DO MÉTODO
 
-  
+        public string RetornaStringGenero(bool genero)
+        {
+            if (genero == true)
+            {
+                return "O genero é Masculino";
+            }
+            else
+            {
+                return "O genero é Feminino";
+            }
+
+        } // FIM DO MÉTODO
+
+
         [Test]
         public void Test1()
         {
-            // As variáveis do tipo 'var' e 'object' são variáveis coringa que podem receber qualquer tipo de valor
-            string nomeString = "Boladão String";
-            var nomeVar = "Boladão Var";
-            object nomeObj = "Boladão Object";
+            string recebeNome = RetornaStringNome(Nome);
+            string recebeGenero = RetornaStringGenero(eHomem);
 
-            int numeroInt = 1;
-            var numeroVar = 2;
-            object numeroObj = 3;
+            Console.WriteLine(recebeNome);
+            Console.WriteLine(recebeGenero);
+        } // FIM DO MÉTODO
 
-            bool eHomem = true;
-            var eMulher = false;
-            object eObj = true;
+    } // FIM DA CLASSE
+} // FIM DA NAMESPACE
 
-            Console.WriteLine($"Olá! meu nome é {Nome} e tenho {Idade} anos! Sou homem {EHomem}");
-        }
-
-    }
-}

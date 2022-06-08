@@ -3849,24 +3849,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\erla.santos\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Erlã\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\erla.santos\\source\\repos\\Treinamento.Versatile.AutomatedTesting\\Treinamento.Versatile.UIAutomatedTesting\\Treinamento.Versatile.UIAutomatedTesting.csproj",
+      "projectUniqueName": "C:\\Users\\Erlã\\Source\\Repos\\Treinamento.AutomatedTesting\\Treinamento.Versatile.UIAutomatedTesting\\Treinamento.Versatile.UIAutomatedTesting.csproj",
       "projectName": "Treinamento.Versatile.UIAutomatedTesting",
-      "projectPath": "C:\\Users\\erla.santos\\source\\repos\\Treinamento.Versatile.AutomatedTesting\\Treinamento.Versatile.UIAutomatedTesting\\Treinamento.Versatile.UIAutomatedTesting.csproj",
-      "packagesPath": "C:\\Users\\erla.santos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\erla.santos\\source\\repos\\Treinamento.Versatile.AutomatedTesting\\Treinamento.Versatile.UIAutomatedTesting\\obj\\",
+      "projectPath": "C:\\Users\\Erlã\\Source\\Repos\\Treinamento.AutomatedTesting\\Treinamento.Versatile.UIAutomatedTesting\\Treinamento.Versatile.UIAutomatedTesting.csproj",
+      "packagesPath": "C:\\Users\\Erlã\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Erlã\\Source\\Repos\\Treinamento.AutomatedTesting\\Treinamento.Versatile.UIAutomatedTesting\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\erla.santos\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Erlã\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
