@@ -7,7 +7,6 @@ namespace Treinamento.Versatile.UIAutomatedTesting
 {
     public class Teste
     {
-<<<<<<< HEAD
 
         #region classes, métodos, variáveis e operações lógicas
         /*
@@ -16,14 +15,12 @@ namespace Treinamento.Versatile.UIAutomatedTesting
         public bool eHomem = true;
 
         public string RetornaStringNome(string nome) // Método 1
-=======
         public string Nome = "Maria";
         public int Idade = 32;
         public bool eHomem = true;
 
 
         public string RetornaStringNome(string nome)
->>>>>>> 7d4e33e32fe2d9cab6a76ad973bf11ba76b71cc5
         {
             if (string.IsNullOrEmpty(nome))
             {
@@ -41,7 +38,6 @@ namespace Treinamento.Versatile.UIAutomatedTesting
             {
                 return "Nome informado é diferente de Boladão e João";
             }
-<<<<<<< HEAD
 
         } // FIM DO MÉTODO 1
 
@@ -60,7 +56,6 @@ namespace Treinamento.Versatile.UIAutomatedTesting
 
 
         [Test] // MÉTODO DE TESTE
-=======
 
         } // FIM DO MÉTODO
 
@@ -79,7 +74,6 @@ namespace Treinamento.Versatile.UIAutomatedTesting
 
 
         [Test]
->>>>>>> 7d4e33e32fe2d9cab6a76ad973bf11ba76b71cc5
         public void Test1()
         {
             string recebeNome = RetornaStringNome(Nome);
@@ -87,7 +81,6 @@ namespace Treinamento.Versatile.UIAutomatedTesting
 
             Console.WriteLine(recebeNome);
             Console.WriteLine(recebeGenero);
-<<<<<<< HEAD
         } // FIM DO MÉTODO DE TESTE
 
         */
