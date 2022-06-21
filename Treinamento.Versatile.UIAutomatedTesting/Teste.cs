@@ -2,6 +2,7 @@
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Treinamento.Versatile.UIAutomatedTesting
 {
@@ -86,7 +87,8 @@ namespace Treinamento.Versatile.UIAutomatedTesting
         */
         #endregion
 
-
+        #region For, while, foreach
+        /*
         [Test] // MÉTODO DE TESTE
         public void Test1()
         {
@@ -138,3 +140,43 @@ namespace Treinamento.Versatile.UIAutomatedTesting
 
     } // FIM DA CLASSE
 } // FIM DA NAMESPACE
+        */
+        #endregion
+
+        [Test]
+        public void Test1()
+        {
+            string[] nomes = { "Fabio", "Boladão", "João", "Maria", "Fabiano" };
+            // ForEach com LINQ
+            nomes.ToList().ForEach(name => Console.WriteLine($"Imprimindo nomes pelo FOREACH: {name}"));
+
+            // Select com LINQ
+            nomes
+                .Select(name => name.Contains("Fabi"))
+                .ToList()
+                .ForEach(isTrue => Console.WriteLine($"O nome contém Fabi? " + isTrue));
+
+            // Where com LINQ
+            nomes
+                .Where(name => name.Contains("Fabi"))
+                .ToList()
+                .ForEach(nome => Console.WriteLine($"O nome '{nome}' contém Fabi"));
+
+            //Any com LINQ
+            if (nomes.Any(nome => nome.Equals("João") || nome.Equals("Maria")))
+            {
+                Console.WriteLine("Tem João ou Maria na lista");
+            }
+
+            // All com LINQ
+            if (nomes.All(nome => nomes.Contains("a")))
+            {
+                Console.WriteLine("Todos os nomes da lista contém a letra 'a'");
+            }
+
+            int[] numeros = { 1, 2, 3, 4, 5 };
+            Console.WriteLine(string.Join(", ", numeros.TakeWhile(n => n < 4)));
+
+        } // FIM DE MÉTODO
+    } // FIM DA CLASSE
+} // FIM DA NAMESPACE 
